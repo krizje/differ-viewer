@@ -1,1 +1,8 @@
-npx biome
+#!/bin/sh
+echo ">>> Running biome check on staged files"
+yarn biome
+echo ">>> Biome check completed"
+
+echo ">>> Running typecheck"
+yarn typecheck
+echo ">>> typecheck completed"
